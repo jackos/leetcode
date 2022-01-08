@@ -1,0 +1,17 @@
+[package]
+name = "leetcode_solutions"
+version = "0.1.0"
+edition = "2021"
+default-run = "add_linked_list"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+
+[[bin]]
+name = "add_linked_list"
+path = "src/add_linked_list.rs"
+
+[[bin]]
+name = "test_hello"
+path = "src/hello.rs"

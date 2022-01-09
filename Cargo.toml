@@ -2,7 +2,7 @@
 name = "leetcode_solutions"
 version = "0.1.0"
 edition = "2021"
-default-run = "add_linked_list"
+default-run = "median_of_two_sorted_arrays"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
@@ -13,5 +13,17 @@ name = "add_linked_list"
 path = "src/add_linked_list.rs"
 
 [[bin]]
-name = "test_hello"
-path = "src/hello.rs"
+name = "longest_substring"
+path = "src/longest_substring.rs"
+
+[[bin]]
+name = "median_of_two_sorted_arrays"
+path = "src/median_of_two_sorted_arrays.rs"
+
+[[bin]]
+name = "cherry_pickup_ii"
+path = "src/cherry_pickup_ii.rs"
+
+[target.x86_64-unknown-linux-gnu]
+linker = "/usr/bin/clang"
+rustflags = ["-Clink-arg=-fuse-ld=lld", "-Clink-arg=-Wl,--no-rosegment"]
